@@ -1,0 +1,2 @@
+
+typedef FileList = Array<File>;
