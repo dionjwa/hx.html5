@@ -1,4 +1,12 @@
 
 HX.HTML5
 ========
-HaXe/JS HTML5 typedef signatures in use at disktree.net and not available in the haXe std library.
+HaXe/Javascript html5 typedef signatures not available in the haXe std library.
+
+
+LINKS
+-----
+http://www.w3.org/TR/webstorage/
+http://www.w3.org/TR/file-system-api/
+http://dev.w3.org/geo/api/
+https://developer.mozilla.org/En/E4X/Processing_XML_with_E4X
