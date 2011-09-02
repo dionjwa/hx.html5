@@ -8,5 +8,6 @@ extern class Image {
 	var height : Int;
 	var complete : Bool;//readonly
 	var onload : Void->Void;
+	var onerror : Dynamic->Void;
 	function new() : Void;
 }
