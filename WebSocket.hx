@@ -1,11 +1,10 @@
 
 extern class WebSocket {
 	
-	// ready state
-	static inline var CONNECTING = 0;
-	static inline var OPEN = 1;
-	static inline var CLOSING = 2;
-	static inline var CLOSED = 3;
+	static var CONNECTING : Int;
+	static var OPEN : Int;
+	static var CLOSING : Int;
+	static var CLOSED : Int;
 	
 	var readyState(default,null) : Int;
 	var bufferedAmount(default,null) : Int;
@@ -22,5 +21,4 @@ extern class WebSocket {
 	
 	function send( data : String ) : Bool;
 	function close() : Void;
-	
 }

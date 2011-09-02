@@ -1,5 +1,5 @@
 
-private typedef Coordinates = {
+typedef Coordinates = {
 	var latitude : Float;
 	var longitude : Float;
 	var altitude : Float;
@@ -9,18 +9,18 @@ private typedef Coordinates = {
 	var speed : Float;
 }
 
-private typedef Position = {
+typedef Position = {
 	var coords : Coordinates;
 	var timestamp : String;
 }
 
-private typedef PositionOptions = {
+typedef PositionOptions = {
 	var enableHighAccuracy : Bool;
 	var timeout : Float;
 	var maximumAge : Float;
 }
 
-private extern class PositionError {
+extern class PositionError {
 	static var UNKNOWN_ERROR(default,null) : Int;
     static var PERMISSION_DENIED(default,null) : Int;
     static var POSITION_UNAVAILABLE(default,null) : Int;
