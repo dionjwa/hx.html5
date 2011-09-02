@@ -6,6 +6,8 @@ HaXe/Javascript html5 typedef signatures not available in the haXe std library.
 
 LINKS
 -----
+https://github.com/tong/hx.html5
+
 http://www.w3.org/TR/webstorage/
 http://www.w3.org/TR/file-system-api/
 http://dev.w3.org/geo/api/

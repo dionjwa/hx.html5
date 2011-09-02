@@ -1,4 +1,4 @@
-<project name="html5" url="http://hxmpp.disktree.net" license="Public">
+<project name="html5" license="Public">
 	<user name="tong"/>
 	<description>Javascript html5 typedef signatures</description>
 	<version name="1.0">Import</version>
