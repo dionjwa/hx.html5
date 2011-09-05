@@ -1,5 +1,5 @@
 
-typedef Canvas = {/*>js.HTMLElement,*/
+typedef Canvas = { >js.Dom.HtmlDom,
 	var width : Int;
 	var height : Int;
 	function getContext( id : String ) : CanvasRenderingContext2D;

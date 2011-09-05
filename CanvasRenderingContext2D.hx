@@ -71,6 +71,9 @@ typedef CanvasRenderingContext2D = {
 	// drawing images
   	//function drawImage( image : Image, dx : Float, dy : Float, ?dw : Float, ?dh : Float ) : Bool;
 	//function drawImage( image : { width : Float, height : Float }, sx : Float, sy : Float, sw : Float, sh : Float, dx : Float, dy : Float, dw : Float, dh : Float ) : Bool;
+	#if haxedev
+	@:overload(function(image : Canvas, sx : Float, sy : Float, ?sw : Float, ?sh : Float, ?dx : Float, ?dy : Float, ?dw : Float, ?dh : Float ) : Bool {})
+	#end
 	function drawImage( image : Image, sx : Float, sy : Float, ?sw : Float, ?sh : Float, ?dx : Float, ?dy : Float, ?dw : Float, ?dh : Float ) : Bool;
 	//function drawImage( image : Image );
 	
