@@ -23,7 +23,7 @@ typedef CanvasRenderingContext2D = {
 	// colors and styles
 	var strokeStyle : Dynamic;
 	var fillStyle : Dynamic;
-	function createLinearGradient( x0 : Float, y0 : Float, r0 : Float, x1 : Float, y1 : Float ) : CanvasGradient;
+	function createLinearGradient( x0 : Float, y0 : Float, x1 : Float, y1 : Float ) : CanvasGradient;
 	function createRadialGradient( x0 : Float, y0 : Float, r0 : Float, x1 : Float, y1 : Float, r1 : Float ) : CanvasGradient;
 	function createPattern( image : Image, repetition : String ) : Void;
 	//function createPattern( image : HTMLCanvasElement, repetition : String ) : Void;
