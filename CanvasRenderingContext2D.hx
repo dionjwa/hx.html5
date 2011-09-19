@@ -25,9 +25,9 @@ typedef CanvasRenderingContext2D = {
 	var fillStyle : Dynamic;
 	function createLinearGradient( x0 : Float, y0 : Float, x1 : Float, y1 : Float ) : CanvasGradient;
 	function createRadialGradient( x0 : Float, y0 : Float, r0 : Float, x1 : Float, y1 : Float, r1 : Float ) : CanvasGradient;
+	@:overload(function createPattern(image:Video,repetition:String):Void{})
+	@:overload(function createPattern(image:Canvas,repetition:String):Void{})
 	function createPattern( image : Image, repetition : String ) : Void;
-	//function createPattern( image : HTMLCanvasElement, repetition : String ) : Void;
-	//function createPattern( image : HTMLVideoElement, repetition : String ) : Void;
 	
 	// line caps/joins
 	var lineWidth : Float;
@@ -57,29 +57,35 @@ typedef CanvasRenderingContext2D = {
 	function arc( x : Float, y : Float, radius : Float, startAngle : Float, endAngle : Float, anticlockwise : Bool ) : Void;
 	function fill() : Void;
 	function stroke() : Void;
+	function drawSystemFocusRing( element : Dynamic ) : Void;
+	function drawCustomFocusRing( element : Dynamic ) : Bool;
+	function scrollPathIntoView() : Void;
 	function clip() : Void;
 	function isPointInPath( x : Float, y : Float ) : Bool;
 	
 	// text
 	var font : String;
-	var textAlign : String; // "start", "end", "left", "right", "center" (default: "start")
-	var textBaseline : String; // "top", "hanging", "middle", "alphabetic", "ideographic", "bottom" (default: "alphabetic")
+	var textAlign : String;
+	var textBaseline : String;
 	function fillText( text : String, x : Float, y : Float, ?maxWidth : Float ) : Void;
 	function strokeText( text : String, x : Float, y : Float, ?maxWidth : Float ) : Void;
 	function measureText( text : String ) : TextMetrics; 
-
-	// drawing images
-  	//function drawImage( image : Image, dx : Float, dy : Float, ?dw : Float, ?dh : Float ) : Bool;
-	//function drawImage( image : { width : Float, height : Float }, sx : Float, sy : Float, sw : Float, sh : Float, dx : Float, dy : Float, dw : Float, dh : Float ) : Bool;
-	#if haxedev
-	@:overload(function(image : Canvas, sx : Float, sy : Float, ?sw : Float, ?sh : Float, ?dx : Float, ?dy : Float, ?dw : Float, ?dh : Float ) : Bool {})
-	#end
-	function drawImage( image : Image, sx : Float, sy : Float, ?sw : Float, ?sh : Float, ?dx : Float, ?dy : Float, ?dw : Float, ?dh : Float ) : Bool;
-	//function drawImage( image : Image );
+	
+	@:overload(function drawImage(image:Video,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function drawImage(image:Video,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function drawImage(image:Video,dx:Float,dy:Float) : Void {} )
+	@:overload(function drawImage(image:Canvas,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function drawImage(image:Canvas,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function drawImage(image:Canvas,dx:Float,dy:Float) : Void {} )
+	@:overload(function drawImage(image:Image,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function drawImage(image:Image,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	function drawImage( image : Image, dx : Float, dy : Float ) : Void;
 	
 	// pixel manipulation
+	@:overload(function createImageData(imagedata:ImageData) : Void {} )
 	function createImageData( sw : Float, sh : Float ) : Void;
 	function getImageData( sx : Float, sx : Float, sw : Float, sh : Float ) : ImageData;
-	function putImageData( imagedata : ImageData, dx : Float, dy : Float, ?dirtyX : Float, ?dirtyY : Float, ?dirtyWidth : Float, ?dirtyHeight : Float ) : Void;
-
+	@:overload(function putImageData(imagedata:ImageData,?dirtyX:Float,?dirtyY:Float,?dirtyWidth:Float,?dirtyHeight:Float):Void{})
+	function putImageData( imagedata : ImageData, dx : Float, dy : Float ) : Void;
+	
 }
