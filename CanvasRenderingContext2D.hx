@@ -82,7 +82,7 @@ typedef CanvasRenderingContext2D = {
 	function drawImage( image : Image, dx : Float, dy : Float ) : Void;
 	
 	// pixel manipulation
-	@:overload(function createImageData(imagedata:ImageData) : Void {} )
+	@:overload(function (imagedata:ImageData) : Void {} )
 	function createImageData( sw : Float, sh : Float ) : Void;
 	function getImageData( sx : Float, sx : Float, sw : Float, sh : Float ) : ImageData;
 	@:overload(function (imagedata:ImageData,?dirtyX:Float,?dirtyY:Float,?dirtyWidth:Float,?dirtyHeight:Float):Void{})
