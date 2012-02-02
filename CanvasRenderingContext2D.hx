@@ -25,7 +25,7 @@ typedef CanvasRenderingContext2D = {
 	var fillStyle : Dynamic;
 	function createLinearGradient( x0 : Float, y0 : Float, x1 : Float, y1 : Float ) : CanvasGradient;
 	function createRadialGradient( x0 : Float, y0 : Float, r0 : Float, x1 : Float, y1 : Float, r1 : Float ) : CanvasGradient;
-	@:overload(function (image:Video,repetition:String):Void{})
+	@:overload(function (image:HTMLVideoElement,repetition:String):Void{})
 	@:overload(function (image:Canvas,repetition:String):Void{})
 	function createPattern( image : Image, repetition : String ) : Void;
 	
@@ -71,9 +71,9 @@ typedef CanvasRenderingContext2D = {
 	function strokeText( text : String, x : Float, y : Float, ?maxWidth : Float ) : Void;
 	function measureText( text : String ) : TextMetrics; 
 	
-	@:overload(function (image:Video,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
-	@:overload(function (image:Video,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
-	@:overload(function (image:Video,dx:Float,dy:Float) : Void {} )
+	@:overload(function (image:HTMLVideoElement,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function (image:HTMLVideoElement,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
+	@:overload(function (image:HTMLVideoElement,dx:Float,dy:Float) : Void {} )
 	@:overload(function (image:Canvas,sx:Float,sy:Float,sw:Float,sh:Float,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
 	@:overload(function (image:Canvas,dx:Float,dy:Float,dw:Float,dh:Float) : Void {} )
 	@:overload(function (image:Canvas,dx:Float,dy:Float) : Void {} )
