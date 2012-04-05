@@ -116,16 +116,16 @@ private typedef MutableTextTrack = {>TextTrack,
 
 extern class HTMLMediaElement {
 	
-	static var NETWORK_EMPTY(default,null) : Int;
-	static var NETWORK_IDLE(default,null) : Int;
-	static var NETWORK_LOADING(default,null) : Int;
-	static var NETWORK_NO_SOURCE(default,null) : Int;
+	static var NETWORK_EMPTY(default,never) : Int;
+	static var NETWORK_IDLE(default,never) : Int;
+	static var NETWORK_LOADING(default,never) : Int;
+	static var NETWORK_NO_SOURCE(default,never) : Int;
 	
-	static var HAVE_NOTHING(default,null) : Int;
-	static var HAVE_METADATA(default,null) : Int;
-	static var HAVE_CURRENT_DATA(default,null) : Int;
-	static var HAVE_FUTURE_DATA(default,null) : Int;
-	static var HAVE_ENOUGH_DATA(default,null) : Int;
+	static var HAVE_NOTHING(default,never) : Int;
+	static var HAVE_METADATA(default,never) : Int;
+	static var HAVE_CURRENT_DATA(default,never) : Int;
+	static var HAVE_FUTURE_DATA(default,never) : Int;
+	static var HAVE_ENOUGH_DATA(default,never) : Int;
 	
 	var error(default,null) : MediaError;
 	var currentSrc(default,null) : String;

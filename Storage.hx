@@ -1,0 +1,2 @@
+
+typedef Storage = LocalStorage;
