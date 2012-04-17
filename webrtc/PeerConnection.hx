@@ -1,6 +1,6 @@
 
-//TODO remove webkit prefix
-@:native("webkitPeerConnection") extern class PeerConnection {
+//TODO
+@:native("webkitDeprecatedPeerConnection") extern class PeerConnection {
 
 	static var NEW(default,never) : Int;
 	static var NEGOTIATING(default,never) : Int;
