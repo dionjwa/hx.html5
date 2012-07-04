@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class RealtimeAnalyserNode extends AudioNode {
 	var fftSize : Int;

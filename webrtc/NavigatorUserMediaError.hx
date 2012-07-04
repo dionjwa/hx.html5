@@ -1,3 +1,4 @@
+package webrtc;
 
 extern class NavigatorUserMediaError {
 	static var PERMISSION_DENIED(default,null) : Int;

@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioNode {
 	var context(default,null) : AudioContext;

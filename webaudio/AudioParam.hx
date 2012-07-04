@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioParam {
 	var value : Float;

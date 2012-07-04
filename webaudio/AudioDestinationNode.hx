@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioDestinationNode extends AudioNode {
 	var numberOfChannels(default,null) : Int;

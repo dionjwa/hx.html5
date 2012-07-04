@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioListener {
 	var gain : Float;

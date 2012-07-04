@@ -1,3 +1,4 @@
+package webrtc;
 
 extern class MediaStream {
 	

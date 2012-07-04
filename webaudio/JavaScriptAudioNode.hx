@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class JavaScriptAudioNode extends AudioNode {
 	var onaudioprocess : Dynamic; //TODO EventListener;

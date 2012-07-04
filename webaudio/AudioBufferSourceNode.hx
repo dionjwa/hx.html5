@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioBufferSourceNode extends AudioSourceNode {
 	var buffer : AudioBuffer;

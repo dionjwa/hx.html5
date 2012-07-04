@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class AudioGainNode extends AudioNode {
 	var gain : AudioGain;

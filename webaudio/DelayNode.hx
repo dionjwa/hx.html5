@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class DelayNode extends AudioNode {
 	var delayTime : AudioParam;

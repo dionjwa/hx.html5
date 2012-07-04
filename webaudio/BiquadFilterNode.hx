@@ -1,3 +1,4 @@
+package webaudio;
 
 extern class BiquadFilterNode extends AudioNode {
 	static var LOWPASS(default,null) : Int;
