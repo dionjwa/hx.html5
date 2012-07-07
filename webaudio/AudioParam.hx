@@ -1,5 +1,6 @@
 package webaudio;
 
+@:native("AudioParam")
 extern class AudioParam {
 	var value : Float;
 	var minValue(default,null) : Float;

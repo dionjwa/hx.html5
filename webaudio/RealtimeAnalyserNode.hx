@@ -1,5 +1,6 @@
 package webaudio;
 
+@:native("RealtimeAnalyserNode")
 extern class RealtimeAnalyserNode extends AudioNode {
 	var fftSize : Int;
 	var frequencyBinCount(default,null) : Int;

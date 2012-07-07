@@ -1,5 +1,6 @@
 package webaudio;
 
+@:native("AudioBufferSourceNode")
 extern class AudioBufferSourceNode extends AudioSourceNode {
 	var buffer : AudioBuffer;
 	var gain(default,null) : AudioGain;
