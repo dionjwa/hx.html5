@@ -1,5 +1,5 @@
 
-typedef CanvasRenderingContext2D = {
+extern class CanvasRenderingContext2D {
 	
 	// back-reference to the canvas
 	var canvas(default,null) : Canvas;
