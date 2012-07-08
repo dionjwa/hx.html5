@@ -1,4 +1,6 @@
+package webaudio;
 
+@:native("AudioContext")
 extern class AudioContext {
 	var destination(default,null) : AudioDestinationNode;
 	var sampleRate(default,null) : Float;

@@ -1,4 +1,6 @@
+package webaudio;
 
+@:native("AudioPannerNode")
 extern class AudioPannerNode extends AudioNode {
 	
 	static var EQUALPOWER(default,null) : Int;

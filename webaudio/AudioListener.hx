@@ -1,4 +1,6 @@
+package webaudio;
 
+@:native("AudioListener")
 extern class AudioListener {
 	var gain : Float;
 	var dopplerFactor : Float;

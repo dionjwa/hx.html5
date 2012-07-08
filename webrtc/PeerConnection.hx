@@ -1,3 +1,4 @@
+package webrtc;
 
 //TODO
 @:native("webkitDeprecatedPeerConnection") extern class PeerConnection {

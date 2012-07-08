@@ -1,4 +1,6 @@
+package webrtc;
 
+@:native("MediaStream")
 extern class MediaStream {
 	
 	static var LIVE(default,null) : Int;

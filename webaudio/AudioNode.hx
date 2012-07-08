@@ -1,4 +1,6 @@
+package webaudio;
 
+@:native("AudioNode")
 extern class AudioNode {
 	var context(default,null) : AudioContext;
 	var numberOfInputs(default,null) : Int;

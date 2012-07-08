@@ -1,4 +1,6 @@
+package webaudio;
 
+@:native("BiquadFilterNode")
 extern class BiquadFilterNode extends AudioNode {
 	static var LOWPASS(default,null) : Int;
 	static var HIGHPASS(default,null) : Int;
