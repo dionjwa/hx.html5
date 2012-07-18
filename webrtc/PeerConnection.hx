@@ -1,7 +1,7 @@
 package webrtc;
 
 //TODO
-@:native("webkitPeerConnection00") extern class PeerConnection {
+@:native("webkitDeprecatedPeerConnection") extern class PeerConnection {
 
 	static var NEW(default,never) : Int;
 	static var NEGOTIATING(default,never) : Int;
