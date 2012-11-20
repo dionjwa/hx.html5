@@ -130,7 +130,7 @@ extern class HTMLMediaElement {
 	var error(default,null) : MediaError;
 	var currentSrc(default,null) : String;
 	var networkState(default,null) : Int;
-	var preload : String;
+	var preload : Bool;
 	var buffered(default,null) : TimeRanges;
 	
 	var readyState(default,null) : Int;
